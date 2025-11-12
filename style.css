@@ -1,5 +1,11 @@
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
 .square{
-    width: 150px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
     background-color: burlywood;
 }
