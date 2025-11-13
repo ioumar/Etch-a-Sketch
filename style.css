@@ -3,10 +3,27 @@
     margin: 0;
 }
 
+.reset-button{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: Helvetica, serif;
+    background-color: rgb(127, 255, 212);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.reset-button:hover{
+    background-color: rgb(136, 174, 216);
+}
+
+
 .container{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 .square{
