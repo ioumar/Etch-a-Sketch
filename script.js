@@ -12,7 +12,7 @@ function createGrid(squareNumber){
     let squares = Math.pow(squareNumber,2);
 
     for(let i=0; i<squares; i++){
-        
+
         let redColor = Math.floor(Math.random()*255);
         let greenColor = Math.floor(Math.random()*255);
         let blueColor = Math.floor(Math.random()*255);
@@ -36,7 +36,7 @@ createGrid(numberOfSquare);
 
 resetButton.addEventListener('click',()=>{
     
-    numberOfSquare = Number(prompt("Entrer le nombre de carré par côté : "));
+    numberOfSquare = Number(prompt("Entrez le nombre de carré par côté : "));
     
     if(numberOfSquare < 1 || numberOfSquare > 100){
         numberOfSquare = 16;
