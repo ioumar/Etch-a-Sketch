@@ -12,6 +12,11 @@ function createGrid(squareNumber){
     let squares = Math.pow(squareNumber,2);
 
     for(let i=0; i<squares; i++){
+        
+        let redColor = Math.floor(Math.random()*255);
+        let greenColor = Math.floor(Math.random()*255);
+        let blueColor = Math.floor(Math.random()*255);
+
         let square = document.createElement('div')
         square.classList.add('square');
         square.style.width = `${GRID_WIDTH/squareNumber}px`;
@@ -20,7 +25,7 @@ function createGrid(squareNumber){
         
         
         square.addEventListener('mouseover', () =>{
-            square.style.backgroundColor = "black";
+            square.style.backgroundColor = `rgb(${redColor},${greenColor},${blueColor})`;
         });
     }
     
