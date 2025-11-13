@@ -1,13 +1,20 @@
+const NUMBER_OF_SQUARE = 16;
+const GRID_WIDTH = 500;
 const squareContainer = document.querySelector('.container');
-const squareNumber = 16;
 
+squareContainer.style.width = `${GRID_WIDTH}px`;
+squareContainer.style.height = `${GRID_WIDTH}px`;
 
-
-for(let i=0; i<squareNumber; i++){
-    for(let j=0; j<squareNumber; j++){
-        let square = document.createElement('div');
+function createGrid(squareNumber){
+    let squares = Math.pow(squareNumber,2);
+    for(let i=0; i<squares; i++){
+        let square = document.createElement('div')
         square.classList.add('square');
+        square.style.width = `${GRID_WIDTH/NUMBER_OF_SQUARE}px`;
+        square.style.height = `${GRID_WIDTH/NUMBER_OF_SQUARE}px`;
         squareContainer.appendChild(square);
     }
+        
+};
 
-}
+createGrid(NUMBER_OF_SQUARE);

@@ -1,12 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
+    margin: 20px auto;
 }
 
 .square{
-    min-width: 70px;
-    min-height: 70px;
-    background-color: burlywood;
+    background-color:rgb(255, 255, 255);
+    box-sizing: border-box;
+    border: 1px solid rgb(69, 69, 69);
 }
